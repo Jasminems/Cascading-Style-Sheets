@@ -1,0 +1,77 @@
+/*A CSS Display*/
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	p 
+	{
+		color: red;
+	}
+	
+	p.ex1 
+	{
+		display: none;
+	}
+	p.ex2 
+	{
+		display: inline;
+	}
+	p.ex3 
+	{
+		display: block;
+	}
+	.a 
+	{
+		display: contents;
+		border: 1px solid red;
+		background-color: lightgrey;
+		padding: 10px;
+		width: 200px;
+	}
+	.b 
+	{
+		border: 1px solid blue;
+		background-color: lightblue;
+		padding: 10px;
+	}
+	l
+	{
+		display:list-item;
+		list-style-position:inline;
+	}
+</style>
+</head>
+<body>
+<h1>The display Property</h1>
+<!--The particular element is removed-->
+<h2>display: none:</h2>
+<div>
+CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed. <p class="ex1">HELLO WORLD!</p> CSS stands for Cascading Style Sheets.
+</div>
+<!--The element is displayed in inline of the paragraph-->
+<h2>display: inline:</h2>
+<div>
+CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed. <p class="ex2">HELLO WORLD!</p> CSS stands for Cascading Style Sheets.
+</div>
+<!--The element is displayed in block new line-->
+<h2>display: block:</h2>
+<div>
+CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed. <p class="ex3">HELLO WORLD!</p> CSS stands for Cascading Style Sheets.
+</div>
+<!--The element is displayed in separate line in a content-->
+<h2>display: contents:</h2>
+<div class="a">
+CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed. <div class="b">HELLO WORLD!</div> CSS stands for Cascading Style Sheets.
+</div>
+<!--Listing the elements-->
+<h2>display: list-item</h2>
+<div class="l">
+<ul>
+<li>Java</li>
+<li>CSS</li>
+<li>HTML</li>
+</ul>
+</div>
+
+</body>
+</html>
