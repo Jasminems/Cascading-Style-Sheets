@@ -1,0 +1,53 @@
+/*A CSS Smooth Scroll*/
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$("a").on('click', function(event) 
+			{
+				if (this.hash !== "") 
+				{
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate(
+					{
+						scrollTop: $(hash).offset().top
+					}, 800, function()
+					{
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+<style>
+	#section1
+	{
+		height: 600px;
+		background-color: pink;
+	}
+
+	#section2 
+	{
+		height: 600px;
+		background-color: yellow;
+	}
+</style>
+</head>
+<body>
+<h1>Smooth Scroll</h1>
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <a href="#section2">Click Me to go to bottom of page</a>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to go to top of page</a>
+</div>
+
+</body>
+</html>
