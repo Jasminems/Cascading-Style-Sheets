@@ -1,0 +1,61 @@
+/*A CSS Position*/
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	div.sticky
+	{
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		padding: 5px;
+		background-color: #cae8ca;
+		border: 3px solid #73AD21;
+	}
+	div.static 
+	{
+		position: static;
+		border: 3px solid #73AD21;
+	}
+	div.relative
+	{
+		position: relative;
+		border: 3px solid #73AD21;
+		left:30px;
+		width:500px;
+		height:250px;
+	}
+	div.fixed 
+	{
+		position: fixed;
+		border: 3px solid #73AD21;
+		bottom: 0;
+		right: 0;
+		width: 300px;
+
+	}
+	div.absolute 
+	{
+		position: absolute;
+		border: 3px solid #73AD21;
+		top: 50px;
+		right: 0;
+		width: 100px;
+		height: 100px;
+	}
+	
+</style>
+</head>
+<body>
+<h2>Position to a block</h2>
+<div class="sticky">Iam Sticky</div>
+<div style="padding-bottom:1000px">
+</div>
+<div class="static">Static position</div><br><br>
+<div class="relative">Relative position
+<div class="absolute">Absolute position</div>
+</div><br><br>
+<div class="fixed">Fixed position</div>
+
+</body>
+</html>
